@@ -85,7 +85,6 @@ var speed = 0.5;
 Next, we want to be able to choose which object we move by clicking on it.
 
 ```
-
     // Add pointer selection
 
      scene.onPointerObservable.add((pointerInfo) => {      		
@@ -157,4 +156,21 @@ We can generate a certain number of objects with a for loop.
         redBox.position.x += i;
         redBox.position.y = 3;
     }
+```
+
+## Animate
+
+Finally, we can animate objects of our chosing.
+
+```
+    // Animate
+
+    scene.actionManager = new BABYLON.ActionManager(scene);
+
+    var rotate = function (mesh) {
+        scene.actionManager.registerAction(new BABYLON.IncrementValueAction(BABYLON.ActionManager.OnEveryFrameTrigger, mesh, "rotation.y", 0.01));
+    }
+
+    rotate(blueBox);
+    rotate(purpleDonut);
 ```
