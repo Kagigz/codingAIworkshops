@@ -155,4 +155,4 @@ In the web app bot, make sure the botFilePath & botFileSecret are set correctly.
 
 ## Integrate in webchat
 
-Download [test.html](), replace your bot name and secret, et voilà!
+Download [test.html](https://github.com/Kagigz/codingAIworkshops/blob/master/workshop2/test.html), replace your bot name and secret, et voilà!
