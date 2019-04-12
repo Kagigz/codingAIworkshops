@@ -88,6 +88,7 @@ try{
     let captions = description['captions'];
     let categories = result['categories'];
     let keywords = result['tags'];
+    let tags = description['tags'];
 }
 catch(e){
     console.log(e);
