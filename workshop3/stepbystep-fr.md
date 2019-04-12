@@ -26,6 +26,8 @@ La projet de départ se trouve [ici](https://github.com/Kagigz/codingAIworkshops
 
 ## Appeler l'API Computer Vision depuis l'appli web
 
+Tout le code qui suit doit être ajouté dans le fichier *computervision.js* (dossier **src/components**)
+
 On veut que l'API Computer Vision soit appelée lorsqu'une image est envoyée, donc on crée une méthode qui sera appelée lorsque l'on clique sur le bouton OK.
 
 ```
