@@ -1,8 +1,8 @@
 # Step by Step
 
-This is a step by step to tutorial to call the Computer Vision API and the Custom Vision service from a react web app.
+This is a step by step tutorial to call the Computer Vision API and the Custom Vision Service from a ReactJS Web App.
 
-The web app to start from is provided [here]().
+The Web App to start from is provided [here]().
 
 ## Installs
 
@@ -12,7 +12,7 @@ The web app to start from is provided [here]().
 
 ## Setting up the project
 
-- Download this repository: the starting project is in the workshop3/startingPoint folder
+- Download this repository: the starting project is in the **workshop3/start** folder
 - In the project folder, run `yarn` to install all dependencies
 - Start the project with the `yarn start` command
 
@@ -22,11 +22,11 @@ The web app to start from is provided [here]().
 - Click on *Create a Resource* (top left)
 - Search for Computer Vision and create a new Computer Vision service
 - Choose a name, subscription, location and resource group, and make sure to select F0 as pricing tier
-- Click on create, and once the resource is deployed go to it and grab one of your subscription keys (*keys* tab)
+- Click on create, and once the resource is deployed go to it and grab one of your subscription keys (*Keys* tab)
 
 ## Calling the Computer Vision API from the web app
 
-We want the Computer Vision API to be called when the image is submitted
+We want the Computer Vision API to be called when the image is submitted, so we create a method that we call when the OK button is clicked.
 
 ```
 handleOK = (url) => {
@@ -37,7 +37,7 @@ handleOK = (url) => {
 }
 ```
 
-Create the *getInfo* method that will call the Computer Vision API, and make sure to give your subscription key.
+Create the *getInfo* method that will call the Computer Vision API, and make sure to fill in your subscription key.
 
 ```
 getInfo = (content) => {
@@ -75,6 +75,10 @@ getInfo = (content) => {
 }
 ```
 
+To observe the results we get back from the API, display the console in your browser (F12).
+
+We now want to store the results in variables.
+
 ```
 try{
     let result = JSON.parse(jsonResponse);
@@ -88,6 +92,8 @@ catch(e){
 }
 ```
 
+Update the component's state to that you can store the results in it.
+
 
 ```
 this.state = {
@@ -98,6 +104,8 @@ this.state = {
     tags:[]
 };
 ```
+
+Use the *setState* method to update the state with the values we get from the Computer Vision API.
 
 ```
 try{
@@ -117,11 +125,16 @@ catch(e){
 }
 ```
 
+You can now test with any image you find on the internet.
+
+**Tip:** Search for images on google, click on one and wait for it to load completely, then copy the link (right click > copy image link).
+
+
 ## Creating a Custom Vision Service
 
 - Go to [customvision.ai](https://customvision.ai)
 - Sign in and create a new classification project
-- Upload the images contained in the *trainingImages* folder and tag them
+- Upload the images contained in the **trainingImages** folder and tag them
 - Train the Custom Vision model
 - From the Predictions tab, publish your model
 - Click on Prediction URL to get your prediction key and endpoint
@@ -141,12 +154,6 @@ this.state = {
 };
 ```
 
-Add the pre-created Custom Vision component to show results
-
-```
-<CustomVision predictions={this.state.customPredictions}/>
-```
-
 Call a method that will call Custom Vision
 
 ```
@@ -158,6 +165,7 @@ handleOK = (url) => {
     
 }
 ```
+
 
 Define what the *getCustomTags* method does
 
@@ -190,7 +198,10 @@ getCustomTags = (content) => {
 }
 ```
 
-Update predictions list
+To observe the results we get back from the API, display the console in your browser (F12).
+
+We can now store the results in the state.
+
 
 ```
 try{
@@ -202,3 +213,20 @@ catch(e){
     console.log(e);
 }
 ```
+
+
+Add the pre-created Custom Vision component to show results
+
+```
+<CustomVision predictions={this.state.customPredictions}/>
+```
+
+
+## Testing Custom Vision model
+
+- Kfet4: https://i.imgur.com/RuN1ETS.jpg
+- Kfet5: https://i.imgur.com/uTAGS71.jpg
+- Kfet6: https://i.imgur.com/zjhD9ot.jpg
+- Kfet7: https://i.imgur.com/LpJFxdB.jpg
+
+
