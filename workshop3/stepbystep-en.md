@@ -2,7 +2,7 @@
 
 This is a step by step tutorial to call the Computer Vision API and the Custom Vision Service from a ReactJS Web App.
 
-The Web App to start from is provided [here]().
+The Web App to start from is provided [here](https://github.com/Kagigz/codingAIworkshops/tree/master/workshop3/start).
 
 ## Installs
 
