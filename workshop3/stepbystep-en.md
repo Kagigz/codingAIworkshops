@@ -26,6 +26,8 @@ The Web App to start from is provided [here](https://github.com/Kagigz/codingAIw
 
 ## Calling the Computer Vision API from the web app
 
+The following code should be added in the *computervision.js* file (**src/components** folder).
+
 We want the Computer Vision API to be called when the image is submitted, so we create a method that we call when the OK button is clicked.
 
 ```
