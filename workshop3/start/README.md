@@ -1,10 +1,8 @@
-# Computer Vision demo
+# Computer Vision Demo
 
 Azure Computer Vision API demo in ReactJS.
 
--- Work in progress -- 
-
 ## How to use
 
-- run `yarn` or `npm install`
-- run `npm start`
+- run `yarn` to install dependencies
+- run `yarn start` to start the app
