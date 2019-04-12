@@ -22,4 +22,17 @@ English:
 - [Step-by-step](https://github.com/Kagigz/codingAIworkshops/blob/master/workshop2/stepbystep-en.md)
 - Final solution: [index.js](https://github.com/Kagigz/codingAIworkshops/blob/master/workshop2/index.js) and [bot.js](https://github.com/Kagigz/codingAIworkshops/blob/master/workshop2/bot.js)
 
+## #3 Develop an Intelligent Vision app
+
+French:
+- [Slides](https://github.com/Kagigz/codingAIworkshops/blob/master/workshop3/workshop3.pptx)
+- [Step-by-step](https://github.com/Kagigz/codingAIworkshops/blob/master/workshop3/stepbystep-fr.md)
+- Final solution: [Computer Vision & Custom Vision demo project](https://github.com/Kagigz/codingAIworkshops/tree/master/workshop3/finalSolution)
+
+English:
+- [Step-by-step](https://github.com/Kagigz/codingAIworkshops/blob/master/workshop3/stepbystep-en.md)
+- Final solution: [Computer Vision & Custom Vision demo project](https://github.com/Kagigz/codingAIworkshops/tree/master/workshop3/finalSolution)
+
+
+
 
